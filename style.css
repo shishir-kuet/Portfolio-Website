@@ -283,117 +283,42 @@ p {
   background: #596875;
 }
 
-/* ========================
-   CHATBOT SECTION
-========================= */
-#chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 320px;
-  background: rgba(0, 0, 0, 0.8);
-  border: 2px solid #bcd1e7;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+
+
+
+
+
+/* Section Style */
+#achievements {
+  background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
+  padding: 100px 0;
 }
 
-.chat-header {
-  background: #cbdef3;
-  color: #070303;
-  padding: 10px;
-  text-align: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-size: 1.5rem;
+/*.info-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, #dbe5e9, #f1f3f5);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.chat-body {
-  padding: 10px;
-  height: 250px;
-  overflow-y: auto;
-  border-bottom: 2px solid #c0d4e9;
-  background: rgba(255, 255, 255, 0.1);
-}
 
-.user-message {
-  text-align: right;
-  color: #eaf0f0;
-  font-weight: bold;
-}
 
-.bot-message {
-  text-align: left;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 5px;
+/* Section Title */
+#academic {
+  background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
+  padding: 100px 0;
 }
-
-/* ========================
-   ABOUT SECTION
-========================= */
-.about-section {
-  background: #f9f9f9;
-  padding: 100px 40px;
-  margin: 100px auto;
-  border-radius: 8px;
-  max-width: 800px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2 {
-  font-size: 4em;
-  color: rgb(32, 15, 79);
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.about-section p,
-.about-section li {
-  font-size: 1.8em;
-  color: #020202;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.about-section h3 {
-  font-size: 1.5em;
-  color: #444;
-  border-bottom: 2px solid rgb(32, 15, 79);
-  padding-bottom: 5px;
-  margin: 15px 0;
-}
-
-.about-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-section a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.about-section a:hover {
-  text-decoration: underline;
-}
-
-/* Common style for both Academic & Achievements */
-/* Bigger Academic & Achievements sections */
-.info-section {
-  background: linear-gradient(to bottom right, #ffffff, #f5f7fa);
-  padding: 140px 0; /* Bigger vertical padding */
-}
-
 .info-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .info-header .section-title {
-  font-size: 5.5rem; /* Bigger title */
-  color: #28a745; /* Default green */
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
   position: relative;
   display: inline-block;
 }
@@ -401,79 +326,159 @@ p {
 .info-header .section-title::after {
   content: '';
   display: block;
-  width: 100px; /* Wider underline */
-  height: 6px;
-  background: #ff9800; /* Accent */
-  margin: 15px auto;
-  border-radius: 5px;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #ff9800);
+  margin: 12px auto;
+  border-radius: 3px;
 }
 
-/* Container for cards */
 .info-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-
-/* Bigger cards */
+/* Card inside each section */
 .info-card {
-  width: 380px;
-  background: #fff;
+  flex: 1 1 300px;   /* allow it to grow, shrink, minimum 300px */
+  max-width: 500px;  /* keep it from becoming too wide */
+  background: #fff; /* sky blue background */
   border-radius: 15px;
-  margin: 20px;
-  padding: 35px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-top: 8px solid #28a745;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-card.achievements {
-  border-top-color: #ff9800;
-}
 
 .info-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .info-card h3 {
-  font-size: 2.4rem; /* Bigger heading */
-  margin-bottom: 20px;
-  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #28a745;
 }
 
+/* Achievements heading different color */
+.info-card.achievements h3 {
+  color: #ff9800;
+}
+
+/* List style */
 .info-card ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .info-card ul li {
-  font-size: 1.4rem; /* Bigger text */
-  margin-bottom: 15px;
-  padding-left: 30px;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  padding-left: 5px;
   position: relative;
+  line-height: 1.6;
 }
 
 .info-card ul li::before {
   content: "✔";
-  color: #28a745;
   position: absolute;
   left: 0;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  color: #28a745;
+  font-weight: bold;
 }
 
 .info-card.achievements ul li::before {
   color: #ff9800;
 }
 
+/* Responsive: stack on small screens */
+@media (max-width: 992px) {
+  .info-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-section {
+    width: 100%;
+  }
+}
+
 /* Extra space between Academic & Achievements */
-.academic-section {
-  margin-bottom: 140px;
+
+
+/* ========================
+   ABOUT SECTION
+========================= */
+/* Container box for About Me content */
+
+.about-section {
+  background: #dbe5e9;       /* sky-blue section background */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section .about-card {
+  background: #fff;          /* white card */
+  border-radius: 15px;
+  max-width: 800px;
+  padding: 30px 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section .about-card:hover {
+    transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles */
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-section h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1.5rem;
+}
+
+/* Text and links */
+.about-section p,
+.about-section ul,
+.about-section ul li {
+  font-size: 1.5rem;   /* uniform larger size */
+  line-height: 1.8;
+  color: #555;
+}
+
+
+.about-section a {
+  color: #0077b5; /* LinkedIn blue vibe */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
 }
 /* Login Page Styles */
 /* Login Section */
+#login {
+  background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
+  padding: 100px 0;
+}
+
+
 .login-section {
   background: #f0f4f8;
   display: flex;
@@ -482,17 +487,43 @@ p {
   padding: 100px 0;
   min-height: 80vh;
 }
+.login-container {
+  text-align: center; /* center everything inside */
+  margin-bottom: 30px; 
+  margin-left: 20px;
+}
+.login-title {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.login-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #ff9800);
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
 
 .login-box {
   background: #fff;
   padding: 50px 40px;
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   width: 400px;
   max-width: 90%;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.login-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
 .login-box h2 {
   font-size: 3rem;
   color: #007BFF;
@@ -559,8 +590,8 @@ p {
 ========================= */
 .sidebar {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -573,7 +604,7 @@ p {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
