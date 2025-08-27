@@ -6,13 +6,12 @@ if (!isset($_SESSION['username'])) {
 }
 include 'db_connect.php';
 
-$id = $_POST['id'];
 $title = $_POST['title'];
 $desc = $_POST['description'];
 $link = $_POST['link'];
 
-$stmt = $conn->prepare("UPDATE projects SET title=?, description=?, link=? WHERE id=?");
-$stmt->bind_param("sssi", $title, $desc, $link, $id);
+$stmt = $conn->prepare("INSERT INTO projects (title, description, link) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $title, $desc, $link);
 $stmt->execute();
 
 header("Location: admin.php");

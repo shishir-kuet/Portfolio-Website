@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+     <script src="script.js" defer></script>
+     <script src="login.js" defer></script>
     <title>Portfolio Website</title>
   </head>
   <body>
+ 
     <section id="one">
       <div class="one container">
         <div class="hero-content">
@@ -15,6 +18,10 @@
           <h1 class="name-line"><span></span>Shishir</h1>
 
           <a href="./Mosaddek Ali.pdf" download class="cta">Hire me</a>
+          <div class="clock-container">
+          <button onclick="startClock()" class="clock-btn">Show Clock</button>
+          <p class="clock-text">Current Time: <span id="clock"></span></p>
+          </div>
 
           <p class="intro-text">
             This <strong>is Shishir,a 3rd year cs student </strong>driven by a
@@ -53,7 +60,7 @@
           <div class="skill-item">
             <div class="icon"><img src="./img/c.jpeg" /></div>
             <h2>Programming Languages:</h2>
-            <h2>C++ & Python</h2>
+            <h2>C  C++ Java & Python</h2>
             <p>
               I have developed strong proficiency in C++ and Python, C++ helps
               me understand low-level programming concepts and efficient memory
@@ -240,7 +247,7 @@
         </div>
     </section>
 
-<section class="login-section" id="login">
+<section class="login-section" id="login" style="display: none;">
   <div class="login-container">
     <h1 class="login-title">Admin Login</h1> <!-- Main title above box -->
     <div class="login-box">
@@ -278,14 +285,8 @@
       <button onclick="scrollToSection('achievements')">Achievements</button>
       <button onclick="scrollToSection('academic')">Academics</button>
       <button onclick="scrollToSection('about')">About Me</button>
-      <button onclick="scrollToSection('login-section')">Login</button>
     </div>
 
-    <script>
-      function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    </script>
+ 
   </body>
 </html>

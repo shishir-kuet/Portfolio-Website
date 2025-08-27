@@ -126,6 +126,40 @@ p {
   background-color: rgb(123, 149, 197);
 }
 
+.clock-container {
+  position: absolute;   /* position relative to page */
+  top: 20px;            /* distance from top */
+  left: 20px;           /* distance from left */
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent to blend with hero */
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.clock-btn {
+  background-color: #28a745; /* green like CTA */
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clock-btn:hover {
+  background-color: #218838; /* darker shade */
+}
+
+.clock-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+
 /* ========================
    SKILLS SECTION
 ========================= */
@@ -339,15 +373,16 @@ p {
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 60px 20px;
 }
 /* Card inside each section */
 .info-card {
   flex: 1 1 300px;   /* allow it to grow, shrink, minimum 300px */
-  max-width: 500px;  /* keep it from becoming too wide */
+  max-width: 800px;  /* keep it from becoming too wide */
   background: #fff; /* sky blue background */
   border-radius: 15px;
   padding: 30px 25px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -384,9 +419,9 @@ p {
 }
 
 .info-card ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
+  content: "✔  ";
+  position: relative;
+/*   left: -5; */
   font-size: 1.3rem;
   color: #28a745;
   font-weight: bold;
@@ -518,6 +553,7 @@ p {
   width: 400px;
   max-width: 90%;
   text-align: center;
+  margin-left: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .login-box:hover {
