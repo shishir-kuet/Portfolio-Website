@@ -16,9 +16,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const clockContainer = document.getElementById("homepage-clock");
 
   if (homepageSection) {
-    clockContainer.style.display = "block"; // show only on homepage
+    clockContainer.style.display = "block"; 
   } else {
-    clockContainer.style.display = "none"; // hide on other pages/sections
+    clockContainer.style.display = "none"; 
   }
 });
 
@@ -29,15 +29,6 @@ function updateClock() {
 }
 
 function startClock() {
-  updateClock(); // show immediately
-  setInterval(updateClock, 1000); // keep updating
+  updateClock(); 
+  setInterval(updateClock, 1000); 
 }
-const sidebar = document.querySelector(".sidebar"); // select your sidebar
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        sidebar.style.display = "none"; // hide sidebar after scrolling down
-    } else {
-        sidebar.style.display = "flex"; // show sidebar at top
-    }
-});
