@@ -165,7 +165,7 @@ p {
 ========================= */
 #skills {
   background: linear-gradient(135deg, #b5cbd0, #ffffff);
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 #skills .skills {
@@ -225,7 +225,7 @@ p {
 ========================= */
 #projects {
   background: linear-gradient(to bottom right, #dbe5e9, #f1f3f5);
-  padding: 150px 0;
+  padding: 50px 0;
 }
 
 .projects-header {
@@ -755,3 +755,4 @@ p {
     font-size: 1.8rem;
   }
 }
+

@@ -32,3 +32,12 @@ function startClock() {
   updateClock(); // show immediately
   setInterval(updateClock, 1000); // keep updating
 }
+const sidebar = document.querySelector(".sidebar"); // select your sidebar
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        sidebar.style.display = "none"; // hide sidebar after scrolling down
+    } else {
+        sidebar.style.display = "flex"; // show sidebar at top
+    }
+});
