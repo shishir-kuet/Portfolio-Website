@@ -4,7 +4,7 @@ if (!isset($_SESSION['username'])) {
     header("Location: ../index.html");
     exit();
 }
-include 'db_connect.php';
+include '../db_connect.php';
 
 $id = $_GET['id'];
 $stmt = $conn->prepare("DELETE FROM projects WHERE id=?");

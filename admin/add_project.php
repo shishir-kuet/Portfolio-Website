@@ -4,7 +4,7 @@ if (!isset($_SESSION['username'])) {
     header("Location: ../index.html");
     exit();
 }
-include 'db_connect.php';
+include '../db_connect.php';
 
 $title = $_POST['title'];
 $desc = $_POST['description'];
