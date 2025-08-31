@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+     <script src="script.js" defer></script>
+     <script src="login.js" defer></script>
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+ 
+    <section id="one">
+      <div class="one container">
+        <div class="hero-content">
+          <h1 class="hello-line"><span></span>Hello</h1>
+          <h1 class="intro-line"><span></span>This is</h1>
+          <h1 class="name-line"><span></span>Shishir</h1>
+
+          <a href="./Md_Mosaddek_Ali_Resume.pdf" download class="cta">Hire me</a>
+          <div class="clock-container">
+          <button onclick="startClock()" class="clock-btn">Show Clock</button>
+          <p class="clock-text">Current Time: <span id="clock"></span></p>
+          </div>
+
+          <p class="intro-text">
+            This <strong>is Shishir,a 3rd year cs student </strong>driven by a
+            strong academic foundation and practical problem-solving mindset. My
+            technical skill set spans
+            <strong>C++, Python, HTML, CSS, JavaScript and Laravel</strong>,
+            with growing expertise in
+            <strong>Machine Learning and Artificial Intelligence</strong
+            >.<br /><br />
+            I actively build full-stack and system-level projects and I
+            consistently perform well on CF. I'm passionate about becoming a
+            <strong>Software Engineer</strong> and
+            <strong>Data Analyst</strong>, and I approach every opportunity with
+            focus, curiosity, and a dedication to excellence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills container">
+        <div class="skill-top">
+          <h1 class="section-title">Skills</h1>
+          <p style="font-size: 1.6rem; font-weight: 600">
+            Skilled in <strong>C++, Python, HTML, CSS, JavaScript</strong>, and
+            <strong>Laravel</strong>, with growing expertise in
+            <strong>Machine Learning</strong> and <strong>AI</strong>.
+            Experienced in using <strong>VS Code</strong> and
+            <strong>XAMPP</strong> to develop full-stack and algorithm-driven
+            projects. Ready to contribute strong problem-solving skills and
+            technical versatility to deliver innovative solutions for a company.
+          </p>
+        </div>
+
+        <div class="skill-bottom">
+          <div class="skill-item">
+            <div class="icon"><img src="./img/c.jpeg" /></div>
+            <h2>Programming Languages:</h2>
+            <h2>C  C++ Java & Python</h2>
+            <p>
+              I have developed strong proficiency in C++ and Python, C++ helps
+              me understand low-level programming concepts and efficient memory
+              management, while Python is my go-to language for rapid
+              development, automation, and exploring Machine Learning and AI.
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><img src="./img/web.PNG" /></div>
+            <h2>Web Development:</h2>
+            <h2>HTML, CSS & JavaScript</h2>
+            <p>
+              I use HTML, CSS, and JavaScript to create responsive,
+              user-friendly web interfaces. These core web technologies have
+              allowed me to build dynamic frontends and enhance user experience
+              in my full-stack projects. They are essential tools that bridge
+              the gap between design and functionality.
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><img src="./img/frame.png" /></div>
+            <h2>Framework & Backend:</h2>
+            <h2>Laravel</h2>
+            <p>
+              I chose Laravel as my primary backend framework because of its
+              elegant syntax and robust features, which simplify complex web
+              application development. It enables me to build secure and
+              scalable systems, such as the Hospital appointment system
+              I’ve completed.
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><img src="./img/ml.png" /></div>
+            <h2>Machine Learning &</h2>
+            <h2>Artificial Intelligence</h2>
+            <p>
+              I am passionate about Machine Learning and AI, focusing on
+              developing intelligent algorithms and data-driven models. These
+              skills open up new possibilities for automation, analytics, and
+              problem-solving beyond traditional programming.
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="icon"><img src="./img/tools.jpeg" /></div>
+            <h2>Tools & Environment:</h2>
+            <h2>VS Code & XAMPP</h2>
+            <p>
+              Using VS Code as my main code editor and XAMPP as a local server
+              environment enhances my development workflow. These tools provide
+              flexibility, ease of testing, and efficient project management
+              across different types of applications.
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="icon">
+              <img src="./img/Competitive-Programming.png" />
+            </div>
+            <h2>Competitive Programming</h2>
+            <h2>& LeetCode</h2>
+            <p>
+              I actively participate in competitive programming and solve
+              problems on LeetCode to sharpen my algorithmic thinking. This
+              practice helps me approach complex problems with optimized
+              solutions and improves my readiness for technical interviews.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-header">
+        <h1 class="section-title">My Projects</h1>
+        <p class="projects-description">
+          <strong>
+            Here are some of the projects I’ve worked on, showcasing my skills
+            and creativity. Click the links to view the code on GitHub!</strong
+          >
+        </p>
+      </div>
+      <div class="projects-container">
+        <div class="project-item">
+          <img
+            src="./img/istockphoto-505551939-612x612.jpg"
+            alt="Library Management System"
+          />
+          <h2>Library Management System</h2>
+          <p>
+            A simple library system to borrow books from library and then also
+            return it within due date.
+          </p>
+          <a
+            href="https://github.com/shishir-kuet/Library_Management_System"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="project-item">
+          <img src="./img/download.png" alt="Pong Ball Game" />
+          <h2>Pong Game</h2>
+          <p>An interactive game to play with keyboard against one another</p>
+          <a href="https://github.com/shishir-kuet/pong-ball" target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+  <!-- Achievements -->
+  <section class="info-section achievements-section" id="achievements">
+    <div class="info-header">
+      <h2 class="section-title">Achievements</h2>
+    </div>
+    <div class="info-container">
+      <div class="info-card achievements">
+        <h3>My Achievements</h3>
+        <ul>
+          <li>Consistently doing good in competitive programming and prize in IKPC</li>
+          <li>Deployed some handful Full-Stack Projects</li>
+          <li>Won prize in Hardware Projects</li>
+          <li>Open-Source Contributor</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics -->
+  <section class="info-section academic-section" id="academics">
+    <div class="info-header">
+      <h2 class="section-title">Academic</h2>
+    </div>
+    <div class="info-container">
+      <div class="info-card">
+        <h3>Education</h3>
+        <ul>
+          <li>B.Sc. in CSE  3rd Year, CGPA: 3.5+</li>
+          <li>H.S.C. – GPA 5.00 </li>
+          <li>College : Rajshahi College, Rajshahi</li>
+          <li>S.S.C. – GPA 5.00</li>
+           <li>School : Rajshahi Collegiate School, Rajshahi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+    <section id="about" class="info-section about-section">
+      <div class="about-card">
+      <div class="info-header">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <p>
+        Hi! I’m Shishir, a passionate Computer Science & Engineering student
+        dedicated to developing innovative software solutions and creating
+        engaging user experiences. With a solid foundation in programming and
+        web development, I am committed to continuous learning, open-source
+        contribution, and growing as a skilled software developer.
+      </p>
+
+      <h3>Contact Information</h3>
+      <ul>
+        <li>
+          Email:
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">mosaddekshishir4113@gmail.com</a>
+        </li>
+        <li>Phone: <a href="tel:+1234567890">01324207402</a></li>
+        <li>
+          Facebook:
+          <a href="https://www.facebook.com/mosaddek.ali.shishir" target="_blank">Md.Mosaddek Ali</a>
+        </li>
+        <li>
+          GitHub:
+          <a href="https://github.com/shishir-kuet" target="_blank">github.com/shishir-kuet</a>
+        </li>
+        <li>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/md-mosaddek-ali-89863b30a/" target="_blank">linkedin.com/in/Mosaddek</a>
+        </li>
+      </ul>
+
+      <h3>Connect with Me</h3>
+      <p>Feel free to reach out to me for collaboration or just to chat!</p>
+        </div>
+    </section>
+
+<section class="login-section" id="login" style="display: none;">
+  <div class="login-container">
+    <h1 class="login-title">Admin Login</h1> <!-- Main title above box -->
+    <div class="login-box">
+      <h2>Login</h2> <!-- Box title -->
+      <form action="login.php" method="POST">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <div class="sidebar">
+      <button onclick="scrollToSection('one')">Home</button>
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button onclick="scrollToSection('achievements')">Achievements</button>
+      <button onclick="scrollToSection('academics')">Academics</button>
+      <button onclick="scrollToSection('about')">About Me</button>
+    </div>
+
+ 
+  </body>
+</html>
