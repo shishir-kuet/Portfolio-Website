@@ -26,12 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Plain text password check (not secure, but works if db has plain passwords)
         if ($password === $row['password']) {
             // Set session
             $_SESSION['username'] = $username;
-
-            // Redirect to admin page
             header("Location: admin/admin.php");
             exit();
         }

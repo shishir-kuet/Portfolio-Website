@@ -318,25 +318,11 @@ p {
 }
 
 
-
-
-
-
 /* Section Style */
 #achievements {
   background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
   padding: 100px 0;
 }
-
-/*.info-section {
-  flex: 1;
-  background: linear-gradient(to bottom right, #dbe5e9, #f1f3f5);
-  border-radius: 20px;
-  padding: 40px 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 
 
 /* Section Title */
@@ -443,13 +429,11 @@ p {
   }
 }
 
-/* Extra space between Academic & Achievements */
 
 
 /* ========================
    ABOUT SECTION
 ========================= */
-/* Container box for About Me content */
 
 .about-section {
   background: #dbe5e9;       /* sky-blue section background */
@@ -619,6 +603,96 @@ p {
 }
 
 
+/* Full page background */
+#contact {
+  background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
+  padding: 50px 0;
+}
+
+
+/* Contact Section wrapper */
+.contact-section {
+  background: linear-gradient(135deg, #dbe5e9, #f1f3f5);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #ff9800);
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+.contact-footer {
+  text-align: center;     
+  font-size: 1.4rem;    
+  color: #222;            
+  margin-top: 20px;        
+  font-weight: 500;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 18px 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+  outline: none;
+}
+
+#contactForm button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#contactForm button:hover {
+  background: #218838;
+}
 
 
 /* ========================

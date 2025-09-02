@@ -249,7 +249,7 @@
 
 <section class="login-section" id="login" style="display: none;">
   <div class="login-container">
-    <h1 class="login-title">Admin Login</h1> <!-- Main title above box -->
+    <h1 class="login-title">Admin Login</h1> 
     <div class="login-box">
       <h2>Login</h2> <!-- Box title -->
       <form action="login.php" method="POST">
@@ -278,15 +278,39 @@
 </section>
 
 
+<!-- Contact Section (always visible) -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h1 class="contact-title">Contact Me</h1>
+    <div class="contact-box">
+      <form id="contactForm" action="send_message.php" method="POST">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+     <p class="contact-footer">© 2025 Shishir. All Rights Reserved.</p>
+  </div>
+</section>
+
+
+
+
     <div class="sidebar">
       <button onclick="scrollToSection('one')">Home</button>
       <button onclick="scrollToSection('skills')">Skills</button>
       <button onclick="scrollToSection('projects')">Projects</button>
       <button onclick="scrollToSection('achievements')">Achievements</button>
       <button onclick="scrollToSection('academics')">Academics</button>
-      <button onclick="scrollToSection('about')">About Me</button>
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('contact')">Contact Me</button>
     </div>
+   
+
+
 
  
   </body>
-</html>
+</html> 

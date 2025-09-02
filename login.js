@@ -5,15 +5,13 @@ document.addEventListener("keydown", (e) => {
     sequence += e.key.toLowerCase();
     
     if (sequence.includes("al")) {
-        // Check session first
+        
         fetch('check_session.php')
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'valid') {
-                    // Session exists, redirect to admin
                     window.location.href = data.redirect;
                 } else {
-                    // No valid session, show login form
                     loginSection.style.display = "flex";
                     loginSection.scrollIntoView({ behavior: "smooth" });
                 }
@@ -25,7 +23,7 @@ document.addEventListener("keydown", (e) => {
                 loginSection.scrollIntoView({ behavior: "smooth" });
             });
         
-        sequence = ""; // reset sequence
+        sequence = ""; 
     }
     
     if (sequence.length > 2) {
