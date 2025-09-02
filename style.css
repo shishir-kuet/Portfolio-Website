@@ -236,15 +236,6 @@ p {
   display: inline-block;
 }
 
-.projects-header .section-title::after {
-  content: '';
-  display: block;
-  width: 70px;
-  height: 4px;
-  background: #ff6347;
-  margin: 10px auto;
-  border-radius: 5px;
-}
 
 .projects-description {
   font-size: 2rem;
@@ -336,13 +327,13 @@ p {
   display: inline-block;
 }
 
-.info-header .section-title::after {
+.info-section .section-title::after {
   content: '';
   display: block;
-  width: 80px;
+  width: 100%;             /* automatically matches title width */
   height: 4px;
-  background: linear-gradient(90deg, #28a745, #ff9800);
-  margin: 12px auto;
+  background: linear-gradient(90deg, #28a745, #ff9800); /* default gradient */
+  margin-top: 8px;
   border-radius: 3px;
 }
 
@@ -408,17 +399,6 @@ p {
   color: #ff9800;
 }
 
-/* Responsive: stack on small screens */
-@media (max-width: 992px) {
-  .info-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-section {
-    width: 100%;
-  }
-}
 
 /* ABOUT SECTION */
 
@@ -497,17 +477,20 @@ p {
   margin-left: 20px;
 }
 .login-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: rgb(32, 15, 79);
+  letter-spacing: 0.2rem;
   position: relative;
-  display: inline-block;
-  font-size: 3rem;
-  color: #222;
-  margin-bottom: 25px;
+  display: inline-block;  
+  position: relative;
+  
 }
 
 .login-title::after {
   content: '';
   display: block;
-  width: 70px;
+  width: 100%;
   height: 4px;
   background: linear-gradient(90deg, #28a745, #ff9800);
   margin: 10px auto 0;
@@ -523,6 +506,7 @@ p {
   max-width: 90%;
   text-align: center;
   margin-left: 25px;
+  margin-top: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .login-box:hover {
@@ -573,20 +557,6 @@ p {
   background: #0056b3;
   transform: translateY(-3px);
 }
-
-
-/* Responsive for mobile */
-@media (max-width: 500px) {
-  .login-box {
-    width: 90%;
-    padding: 40px 20px;
-  }
-
-  .login-box h2 {
-    font-size: 2.5rem;
-  }
-}
-
 
 /* Full page background */
 #contact {
@@ -723,56 +693,41 @@ p {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* ========== RESPONSIVE FIXES ========== */
-
-/* Tablets (≤ 992px) */
-@media (max-width: 992px) {
+/* Tablets (width ≤ 992px) */
+@media screen and (max-width: 992px) {
   .section-title {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 
   .hello-line, .intro-line, .name-line {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
 
   .hero-content {
     max-width: 90%;
     padding: 0 15px;
+    text-align: center;
   }
 
-  .info-container {
-    flex-direction: column;
+  .info-container,
+  .skill-bottom,
+  .projects-container {
+    flex-direction: column !important;
     align-items: center;
   }
 
-  .info-text, .info-image {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-/* Mobile (≤ 600px) */
-@media (max-width: 600px) {
-  .section-title {
-    font-size: 2.2rem;
+  .skill-item,
+  .project-item,
+  .info-card {
+    width: 80% !important;
+    margin: 10px auto !important;
   }
 
-  .hello-line, .intro-line, .name-line {
-    font-size: 1.8rem;
-  }
-
-  .hero {
-    padding: 80px 15px;
-    text-align: center;
-  }
-
-  .hero-content {
-    text-align: center;
-  }
-
-  .project-item {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .contact-box,
+  .login-box,
+  .about-card {
+    width: 90% !important;
+    padding: 30px 20px !important;
   }
 
   .sidebar {
@@ -782,21 +737,52 @@ p {
     flex-direction: column;
     gap: 10px;
   }
+}
 
-  .login-box {
-    width: 90%;
-    padding: 30px 15px;
+/* Mobile Phones (width ≤ 600px) */
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 2.2rem !important;
+  }
+
+  .hello-line, .intro-line, .name-line {
+    font-size: 1.8rem !important;
+  }
+
+  .intro-text {
+    font-size: 1.4rem !important;
+  }
+
+  .skill-item,
+  .project-item,
+  .info-card {
+    width: 95% !important;
+    margin: 10px auto !important;
+  }
+
+  .sidebar {
+    display: none; 
   }
 }
 
-/* Very small devices (≤ 400px) */
-@media (max-width: 400px) {
+/* Very Small Devices (width ≤ 400px) */
+@media screen and (max-width: 400px) {
   .hello-line, .intro-line, .name-line {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
+  }
+
+  .intro-text {
+    font-size: 1.3rem !important;
+  }
+
+  .skill-item,
+  .project-item,
+  .info-card {
+    width: 100% !important;
+    margin: 5px auto !important;
   }
 }
-

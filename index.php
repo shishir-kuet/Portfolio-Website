@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="info-section">
       <div class="projects-header">
         <h1 class="section-title">My Projects</h1>
         <p class="projects-description">
