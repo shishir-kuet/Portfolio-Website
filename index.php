@@ -279,9 +279,11 @@
 
 
 <!-- Contact Section (always visible) -->
-<section id="contact" class="contact-section">
+<section id="contact" class="info-section contact-section">
   <div class="contact-container">
-    <h1 class="contact-title">Contact Me</h1>
+       <div class="info-header">
+      <h2 class="section-title">Contact Me</h2>
+    </div>
     <div class="contact-box">
       <form id="contactForm" action="send_message.php" method="POST">
         <input type="text" name="name" id="name" placeholder="Your Name" required>

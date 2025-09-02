@@ -39,9 +39,7 @@ p {
   justify-content: center;
 }
 
-/* ========================
-   HERO SECTION
-========================= */
+/*  HERO SECTION */
 #one {
   background-image: url(./img/1.png);
   background-size: cover;
@@ -127,17 +125,17 @@ p {
 }
 
 .clock-container {
-  position: absolute;   /* position relative to page */
-  top: 20px;            /* distance from top */
-  left: 20px;           /* distance from left */
+  position: absolute;   
+  top: 20px;           
+  left: 20px;           
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent to blend with hero */
+  background-color: rgba(0, 0, 0, 0.3); 
   padding: 10px 15px;
   border-radius: 10px;
 }
 
 .clock-btn {
-  background-color: #28a745; /* green like CTA */
+  background-color: #28a745; 
   color: #fff;
   border: none;
   padding: 8px 20px;
@@ -160,9 +158,7 @@ p {
 }
 
 
-/* ========================
-   SKILLS SECTION
-========================= */
+/* SKILLS SECTION */
 #skills {
   background: linear-gradient(135deg, #b5cbd0, #ffffff);
   padding: 20px 0;
@@ -220,9 +216,7 @@ p {
   filter: brightness(1.2);
 }
 
-/* ========================
-   PROJECTS SECTION
-========================= */
+/* PROJECTS SECTION */
 #projects {
   background: linear-gradient(to bottom right, #dbe5e9, #f1f3f5);
   padding: 50px 0;
@@ -235,7 +229,9 @@ p {
 
 .projects-header .section-title {
   font-size: 5rem;
-  color: #007BFF;
+  font-weight: 300;
+  color: rgb(32, 15, 79);
+  letter-spacing: 0.2rem;
   position: relative;
   display: inline-block;
 }
@@ -317,15 +313,11 @@ p {
   background: #596875;
 }
 
-
-/* Section Style */
 #achievements {
   background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
   padding: 100px 0;
 }
 
-
-/* Section Title */
 #academics {
   background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
   padding: 100px 0;
@@ -336,9 +328,10 @@ p {
 }
 
 .info-header .section-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #222;
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgb(32, 15, 79);
+  letter-spacing: 0.2rem;
   position: relative;
   display: inline-block;
 }
@@ -363,9 +356,9 @@ p {
 }
 /* Card inside each section */
 .info-card {
-  flex: 1 1 300px;   /* allow it to grow, shrink, minimum 300px */
-  max-width: 800px;  /* keep it from becoming too wide */
-  background: #fff; /* sky blue background */
+  flex: 1 1 300px;   
+  max-width: 800px;  
+  background: #fff; 
   border-radius: 15px;
   padding: 30px 25px;
   text-align: left;
@@ -385,12 +378,10 @@ p {
   color: #28a745;
 }
 
-/* Achievements heading different color */
 .info-card.achievements h3 {
   color: #ff9800;
 }
 
-/* List style */
 .info-card ul {
   list-style: none;
   padding: 0;
@@ -429,11 +420,7 @@ p {
   }
 }
 
-
-
-/* ========================
-   ABOUT SECTION
-========================= */
+/* ABOUT SECTION */
 
 .about-section {
   background: #dbe5e9;       /* sky-blue section background */
@@ -467,22 +454,20 @@ p {
 .about-section h3 {
   margin-top: 25px;
   margin-bottom: 10px;
-  color: #444;
+  color: #333;
   font-size: 1.5rem;
 }
 
-/* Text and links */
-.about-section p,
 .about-section ul,
 .about-section ul li {
   font-size: 1.5rem;   /* uniform larger size */
   line-height: 1.8;
-  color: #555;
+  color: #333;
 }
 
 
 .about-section a {
-  color: #0077b5; /* LinkedIn blue vibe */
+  color: #0077b5; 
   text-decoration: none;
   font-weight: 500;
 }
@@ -490,7 +475,7 @@ p {
 .about-section a:hover {
   text-decoration: underline;
 }
-/* Login Page Styles */
+
 /* Login Section */
 #login {
   background: linear-gradient(135deg,#dbe5e9, #f1f3f5);
@@ -622,21 +607,6 @@ p {
   text-align: center;
 }
 
-.contact-title {
-  font-size: 3rem;
-  margin-bottom: 25px;
-  position: relative;
-}
-
-.contact-title::after {
-  content: '';
-  display: block;
-  width: 70px;
-  height: 4px;
-  background: linear-gradient(90deg, #28a745, #ff9800);
-  margin: 10px auto 0;
-  border-radius: 3px;
-}
 
 .contact-box {
   background: #fff;
