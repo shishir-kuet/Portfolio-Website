@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // If login fails
-    echo "Invalid login! <a href='index.html'>Try again</a>";
+    echo "Invalid login! <a href='index.php'>Try again</a>";
 }
 ?>
 
