@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-    header("Location: ../index.html");
+    header("Location: ../index.php");
     exit();
 }
 include '../db_connect.php';
@@ -24,11 +24,11 @@ include '../db_connect.php';
             <li><a href="?page=add">Add Project</a></li>
             <li><a href="?page=update">Update Projects</a></li>
             <li><a href="?page=delete">Delete Projects</a></li>
+            <li><a href="?page=messages">Show Messages</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </div>
 
-    <!-- Main Content -->
     <div class="content">
         <?php
         if (isset($_GET['page']) && $_GET['page'] == 'show') {
@@ -89,6 +89,28 @@ include '../db_connect.php';
                       </tr>";
             }
             echo "</table>";
+        }
+
+        elseif (isset($_GET['page']) && $_GET['page'] == 'messages') {
+            echo "<h2>Contact Messages</h2>";
+            $result = $conn->query("SELECT * FROM contact_messages ORDER BY created_at ASC");
+            if ($result && $result->num_rows > 0) {
+                echo "<table>
+                        <tr><th>ID</th><th>Name</th><th>Email</th><th>Subject</th><th>Message</th><th>Date</th></tr>";
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                            <td>{$row['id']}</td>
+                            <td>" . htmlspecialchars($row['name']) . "</td>
+                            <td>" . htmlspecialchars($row['email']) . "</td>
+                            <td>" . htmlspecialchars($row['subject']) . "</td>
+                            <td>" . nl2br(htmlspecialchars($row['message'])) . "</td>
+                            <td>{$row['created_at']}</td>
+                          </tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "<p>No messages found.</p>";
+            }
         }
 
         else {

@@ -92,3 +92,26 @@ button {
 button:hover {
     background: #219150;
 }
+
+input[type="text"], 
+textarea {
+    width: 95%;        
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+
+
+textarea {
+    min-height: 80px;   
+    resize: vertical;   
+}
+
+form input[type="text"],
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 12px; 
+}
