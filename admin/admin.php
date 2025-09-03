@@ -33,7 +33,7 @@ include '../db_connect.php';
         <?php
         if (isset($_GET['page']) && $_GET['page'] == 'show') {
             echo "<h2>All Projects</h2>";
-            $result = $conn->query("SELECT * FROM projects ORDER BY id DESC");
+            $result = $conn->query("SELECT * FROM projects ORDER BY id ASC");
             echo "<table>
                     <tr><th>ID</th><th>Title</th><th>Description</th><th>Link</th></tr>";
             while ($row = $result->fetch_assoc()) {
@@ -59,7 +59,7 @@ include '../db_connect.php';
 
         elseif (isset($_GET['page']) && $_GET['page'] == 'update') {
             echo "<h2>Update Projects</h2>";
-            $result = $conn->query("SELECT * FROM projects ORDER BY id DESC");
+            $result = $conn->query("SELECT * FROM projects ORDER BY id ASC");
             echo "<table>
                     <tr><th>ID</th><th>Title</th><th>Description</th><th>Link</th><th>Action</th></tr>";
             while ($row = $result->fetch_assoc()) {
